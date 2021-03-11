@@ -1,2 +1,4 @@
-# vanillaJS
-Vanilla JS projects from learnvanillajs.com/projects
+# vanillaJS Projects
+Projects executions from learnvanillajs.com/projects
+
+1.- [Accordion](https://hermesgarcia.com/projects/vanillaJS/Accordion) 

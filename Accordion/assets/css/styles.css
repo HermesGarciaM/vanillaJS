@@ -1,0 +1,68 @@
+h1 {
+    font-size: 36px;
+}
+
+.accordion {
+    margin-top: 5vh;
+}
+
+.accordion .wrapper {
+    margin-bottom: 1em;
+}
+
+.accordion .header {
+    border: 1px solid #08293b;
+    cursor: pointer;
+}
+
+.accordion .header i {
+    position: relative;
+    left: 10px;
+}
+
+.accordion .closed .fa-sort-down {
+    display: inline-block;
+}
+
+.accordion .closed .fa-sort-up {
+    display: none;
+}
+
+.accordion .opened .fa-sort-down {
+    display: none;
+}
+
+.accordion .opened .fa-sort-up {
+    display: inline-block;
+}
+
+.accordion .fa-sort-down {
+    bottom: 5px;
+}
+
+.accordion .fa-sort-up {
+    top: 2px;
+}
+
+.accordion .header h2 {
+    font-size: 28px;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: center;
+}
+
+.accordion .text-body {
+    display: none;
+    padding: 10px;
+    border: 1px solid #08293b;
+    border-top: 0;
+    margin-bottom: 1rem;
+}
+
+.accordion .opened .text-body {
+    display: block;
+}
+
+.accordion .text-body p {
+    margin: 0 auto;
+}
