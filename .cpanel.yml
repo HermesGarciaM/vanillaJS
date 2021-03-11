@@ -1,5 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home3/hermesgarcia/public_html/projects
-    - /bin/cp -R /home3/hermesgarcia/repositories/vanillaJS $DEPLOYPATH
+    - export DEPLOYPATH=/home3/hermesgarcia/public_html/projects/vanillaJS
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp -R /home3/hermesgarcia/repositories/vanillaJS/Accordion/assets $DEPLOYPATH
