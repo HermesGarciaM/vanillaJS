@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home3/hermesgarcia/public_html/projects
+    - /bin/cp -R /home3/hermesgarcia/repositories/vanillaJS $DEPLOYPATH
