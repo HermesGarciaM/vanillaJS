@@ -5,5 +5,5 @@ deployment:
     - export DEPLOYPATH2=/home3/hermesgarcia/public_html/projects/vanillajs/petfinder
     - /bin/cp accordion/index.html $DEPLOYPATH
     - /bin/cp petfinder/index.html $DEPLOYPATH2
-    - /bin/cp -R /home3/hermesgarcia/repositories/vanillajs/accordion/assets $DEPLOYPATH
-    - /bin/cp -R /home3/hermesgarcia/repositories/vanillajs/petfinder/assets $DEPLOYPATH2
+    - /bin/cp -R /home3/hermesgarcia/repositories/vanillaJS/accordion/assets $DEPLOYPATH
+    - /bin/cp -R /home3/hermesgarcia/repositories/vanillaJS/petfinder/assets $DEPLOYPATH2
