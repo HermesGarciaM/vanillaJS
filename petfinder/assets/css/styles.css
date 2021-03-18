@@ -1,3 +1,7 @@
+html {
+    height: 100%;
+}
+
 header {
     padding: 0 20%;
 }
@@ -8,6 +12,18 @@ h1 {
 
 #app {
     padding: 0 5%;
+}
+
+.error {
+    text-align: center;
+    margin-top: 15vh;
+    font-size: 40px;
+    color: red;
+    font-weight: 200;
+}
+
+#moreAnimals {
+    margin-bottom: 5vh;
 }
 
 .animal {
@@ -30,11 +46,11 @@ h1 {
     -o-transform: scale(1.05);
     transform: scale(1.05);
 }
-
 .animal .photo {
     height: 60%;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
+
 
 .animal .photo img {
     width: 100%;
@@ -66,7 +82,34 @@ h1 {
     font-weight: 700;
 }
 
-/* Prelaoder */
+.animalModalInfo .photo {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.animalModalInfo .photo img {
+    width: 100%;
+    max-height: 60vh;
+}
+
+.animalModalInfo .body{
+    text-align: center;
+    padding: 3% 3% 0;
+}
+
+.animalModalInfo .body div{
+    padding: 5px 0;
+}
+
+.animalModalInfo .body div > span{
+    font-weight: 800;
+}
+
+.modal .animalModalInfo .body .name{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Preloader & loader */
 #preloader {
     position: fixed;
     top: 0;
@@ -76,6 +119,31 @@ h1 {
     z-index: 9999;
     overflow: hidden;
     background: #fff;
+}
+
+#loader {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: rgba(255,255,255,0.3);
+}
+
+#loader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #23395B;
+    border-top: 6px solid rgba(255,255,255,0.1);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: animate-preloader 1s linear infinite;
 }
 
 @keyframes animate-preloader {
@@ -142,8 +210,46 @@ h1 {
     -webkit-animation: blink normal 2s infinite ease-in-out; /* Webkit */
     -ms-animation: blink normal 2s infinite ease-in-out; /* IE */
     animation: blink normal 2s infinite ease-in-out; /* Opera and prob css3 final iteration */
-    width: 80px;
+    width: 150px;
     position: fixed;
-    top: calc(50% - 50px);
-    left: calc(50% - 50px);
+    top: calc(50% - 75px);
+    left: calc(50% - 75px);
+}
+
+/* Back to top button */
+.back-to-top {
+    position: fixed;
+    display: none;
+    background: #23395B;
+    color: #fff;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 1;
+    font-size: 16px;
+    border-radius: 50%;
+    right: 15px;
+    bottom: 15px;
+    transition: .15s ease-in-out;
+    z-index: 11;
+
+}
+
+.back-to-top i {
+    padding-top: 12px;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .back-to-top {
+        bottom: 15px;
+    }
+}
+
+
+/*----- RESPONSIVE -----*/
+@media (max-width: 767px) {
+    header {
+        padding: 0 2%;
+    }
 }
