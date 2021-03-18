@@ -180,13 +180,6 @@ document.addEventListener('click', function(event){
             modalBody.appendChild(div);
             document.getElementById('moreInfoRef').href = animal.url;
 
-
-            console.log('animal fetch');
-            console.log(animal);
-
-
-
-
             $('#animalModal').modal(); //w Jquery because of Bootstrap 4
             document.getElementById('loader').style.display = 'none';
         });
