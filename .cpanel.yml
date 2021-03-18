@@ -2,5 +2,8 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home3/hermesgarcia/public_html/projects/vanillaJS/Accordion
+    - export DEPLOYPATH2=/home3/hermesgarcia/public_html/projects/vanillaJS/Petfinder
     - /bin/cp Accordion/index.html $DEPLOYPATH
+    - /bin/cp Petfinder/index.html $DEPLOYPATH2
     - /bin/cp -R /home3/hermesgarcia/repositories/vanillaJS/Accordion/assets $DEPLOYPATH
+    - /bin/cp -R /home3/hermesgarcia/repositories/vanillaJS/Petfinder/assets $DEPLOYPATH2
