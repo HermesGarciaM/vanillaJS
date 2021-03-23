@@ -38,10 +38,50 @@
     <header>
         <h1 class="mt-5 text-center">VanillaJS project - Petfinder</h1>
         <p class="text-center">Use the Petfinder API to get a list of available pets from a shelter and display them on a web page.</p>
+        <p class="text-center"><strong>Time to finish: </strong> 6 Hrs.</p>
     </header>
-    <div id="app" class="row justify-content-center">
+    <div id="filters" class="row justify-content-center mt-5">
+        <div class="form-group col-auto">
+            <label for="type">Type: </label>
+            <select name="type" id="type">
+                <option value="0" selected>All</option>
+            </select>
+        </div>
+
+        <div class="form-group col-auto">
+            <label for="size">Size: </label>
+            <select name="size" id="size">
+                <option value="0" selected>All Sizes</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="xlarge">Extra Large</option>
+            </select>
+        </div>
+
+        <div class="form-group col-auto">
+            <label for="gender">Gender: </label>
+            <select name="gender" id="gender">
+                <option value="0" selected>All</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+
+        <div class="form-group col-auto">
+            <label for="age">Age: </label>
+            <select name="age" id="age">
+                <option value="0" selected>All</option>
+                <option value="baby">Baby</option>
+                <option value="young">Young</option>
+                <option value="adult">Adult</option>
+                <option value="senior">Senior</option>
+            </select>
+        </div>
+
     </div>
-    <div class="row justify-content-center mt-5">
+    <div id="app" class="row justify-content-center"></div>
+    <div id="moreAnimalsDiv" class="row justify-content-center mt-5">
         <div class="col-6 text-center">
             <button id="moreAnimals" class="btn btn-primary">Show More Pets</button>
         </div>
