@@ -1,0 +1,26 @@
+html {
+    height: 100%;
+}
+
+header {
+    padding: 0 20%;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+input.form-control {
+    display: inline-block;
+    width: 50px;
+}
+
+#app {
+    padding: 5%;
+    text-align: center;
+    font-size: 6em;
+}
+
+#controlBtns {
+    display: none;
+}
