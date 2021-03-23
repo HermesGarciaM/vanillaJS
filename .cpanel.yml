@@ -3,7 +3,10 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home3/hermesgarcia/public_html/projects/vanillajs/accordion
     - export DEPLOYPATH2=/home3/hermesgarcia/public_html/projects/vanillajs/petfinder
+    - export DEPLOYPATH3=/home3/hermesgarcia/public_html/projects/vanillajs/countdown
     - /bin/cp accordion/index.html $DEPLOYPATH
     - /bin/cp petfinder/index.html $DEPLOYPATH2
+    - /bin/cp countdown/index.html $DEPLOYPATH3
     - /bin/cp -R /home3/hermesgarcia/repositories/vanillaJS/accordion/assets $DEPLOYPATH
     - /bin/cp -R /home3/hermesgarcia/repositories/vanillaJS/petfinder/assets $DEPLOYPATH2
+    - /bin/cp -R /home3/hermesgarcia/repositories/vanillaJS/countdown/assets $DEPLOYPATH3
