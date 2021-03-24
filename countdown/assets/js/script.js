@@ -9,6 +9,7 @@ document.getElementById('timeout').focus();
 
 document.getElementById('submit').addEventListener('click', function() {
     startCountdown();
+    return false;
 });
 
 document.getElementById('restart').addEventListener('click', function() {
