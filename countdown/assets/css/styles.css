@@ -26,6 +26,10 @@ input.form-control {
     display: none;
 }
 
+#submit {
+    margin-top: -4px;
+}
+
 .paused {
     color: #ffc107;
 }
