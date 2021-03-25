@@ -33,20 +33,20 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-<!--Time to finish - 60 mins-->
+<!--Time to finish - 90 mins-->
 <div class="container-fluid">
     <header>
         <h1 class="mt-5 text-center">VanillaJS project - Countdown</h1>
         <p class="text-center">Write an app that counts down to 0 from a time.</p>
-        <p class="text-center"><strong>Time to finish: </strong> 60 mins.</p>
+        <p class="text-center"><strong>Time to finish: </strong> 90 mins.</p>
     </header>
 
     <div class="row justify-content-center mt-5">
         <div class="col-12 text-center">
             <form onsubmit="return false;">
                 <div class="form-group ml-2">
-                    <label for="timeout" class="mr-2">Time for countdown (in minutes): </label>
-                    <input type="text" class="form-control" id="timeout" maxlength="2">
+                    <label for="timeout" class="mr-2">Time for countdown: </label>
+                    <input type="text" class="form-control" id="timeout" maxlength="5" data-format="**:**" data-mask="  :" placeholder="mm:ss">
                     <button type="submit" id="submit" class="btn btn-success ml-2 mt-2 mt-sm-0">Countdown!</button>
                 </div>
             </form>

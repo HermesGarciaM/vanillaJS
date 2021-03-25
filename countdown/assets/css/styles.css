@@ -12,7 +12,8 @@ h1 {
 
 input.form-control {
     display: inline-block;
-    width: 50px;
+    width: 90px;
+    text-align: center;
 }
 
 #app {
