@@ -182,4 +182,20 @@ h1 {
     header {
         padding: 0 2%;
     }
+
+    #app {
+        padding: 20px 5% 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .door-img {
+        width: 70px;
+    }
+}
+
+.monster-img {
+    width: 70px;
+    max-width: 80px;
+    max-height: 70px;
 }
