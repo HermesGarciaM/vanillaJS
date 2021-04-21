@@ -1,0 +1,185 @@
+html {
+    height: 100%;
+}
+
+header {
+    padding: 0 20%;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+#app {
+    padding: 0 15%;
+    text-align: center;
+}
+
+.door {
+    padding-bottom: 30px;
+    width: 28%;
+    text-align: center;
+    display: inline-block;
+}
+
+.door-img {
+    width: 120px;
+    cursor: pointer;
+}
+
+.monster-img {
+    width: 120px;
+    max-width: 120px;
+    max-height: 118px;
+    cursor: inherit;
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.modal-photo img {
+    width: 100%;
+}
+
+.modal-data {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 25px 10px;
+}
+
+
+/* Preloader & loader */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #fff;
+}
+
+#loader {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: rgba(255,255,255,0.3);
+}
+
+#loader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #23395B;
+    border-top: 6px solid rgba(255,255,255,0.1);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: animate-preloader 1s linear infinite;
+}
+
+@keyframes animate-preloader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* IE */
+@-ms-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Opera and prob css3 final iteration */
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.blink-image {
+    -moz-animation: blink normal 2s infinite ease-in-out; /* Firefox */
+    -webkit-animation: blink normal 2s infinite ease-in-out; /* Webkit */
+    -ms-animation: blink normal 2s infinite ease-in-out; /* IE */
+    animation: blink normal 2s infinite ease-in-out; /* Opera and prob css3 final iteration */
+    width: 150px;
+    position: fixed;
+    top: calc(50% - 75px);
+    left: calc(50% - 75px);
+}
+
+/* Back to top button */
+.back-to-top {
+    position: fixed;
+    display: none;
+    background: #23395B;
+    color: #fff;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 1;
+    font-size: 16px;
+    border-radius: 50%;
+    right: 15px;
+    bottom: 15px;
+    transition: .15s ease-in-out;
+    z-index: 11;
+
+}
+
+
+/*----- RESPONSIVE -----*/
+@media (max-width: 767px) {
+    header {
+        padding: 0 2%;
+    }
+}
