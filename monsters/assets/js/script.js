@@ -83,7 +83,7 @@ function winwin(){
     removeClickeableObjects();
     modalImage.src = './assets/img/winner.gif';
     modalData.textContent = 'Congratulations! You found all your monster friends.';
-    document.getElementById('playAgain').classList.add('btn-success');
+    document.getElementById('playAgain').className = 'btn btn-success';
     $('#finishGame').modal(); //w Jquery because of Bootstrap 4
 }
 
@@ -91,8 +91,7 @@ function loser(){
     removeClickeableObjects()
     modalImage.src = './assets/img/loser.gif';
     modalData.textContent = 'You lose! Be careful next time.';
-    document.getElementById('playAgain').classList.add('btn-danger');
-
+    document.getElementById('playAgain').className = 'btn btn-danger    ';
     $('#finishGame').modal(); //w Jquery because of Bootstrap 4
 }
 
