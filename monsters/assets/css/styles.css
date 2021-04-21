@@ -192,10 +192,10 @@ h1 {
     .door-img {
         width: 70px;
     }
-}
 
-.monster-img {
-    width: 70px;
-    max-width: 80px;
-    max-height: 70px;
+    .monster-img {
+        width: 70px;
+        max-width: 80px;
+        max-height: 70px;
+    }
 }
