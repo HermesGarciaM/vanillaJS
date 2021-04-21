@@ -11,6 +11,7 @@ deployment:
     - /bin/cp petfinder/index.html $DEPLOYPATH2
     - /bin/cp countdown/index.html $DEPLOYPATH3
     - /bin/cp monsters/index.html $DEPLOYPATH4
+    - /bin/cp -R /home3/hermesgarcia/repositories/vanillaJS/lib $DEPLOYPATH
     - /bin/cp -R /home3/hermesgarcia/repositories/vanillaJS/accordion/assets $DEPLOYPATH1
     - /bin/cp -R /home3/hermesgarcia/repositories/vanillaJS/petfinder/assets $DEPLOYPATH2
     - /bin/cp -R /home3/hermesgarcia/repositories/vanillaJS/countdown/assets $DEPLOYPATH3
