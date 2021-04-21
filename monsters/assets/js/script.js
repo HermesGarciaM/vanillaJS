@@ -1,8 +1,8 @@
 let fadeTarget = document.getElementById('preloader'),
     app = document.getElementById('app'),
     counter = 0,
-    modalImage = document.getElementById('modal-image');
-    modalData = document.getElementById('modal-data');
+    modalImage = document.getElementById('modal-image'),
+    modalData = document.getElementById('modal-data'),
     monsters = [
         'sock.svg',
         'monster1.svg',
@@ -35,12 +35,12 @@ function fadePreloader(){
 function renderGame(newGame = false){
     if(newGame){
         app.removeChild(app.firstChild);
+        counter = 0;
     }
-
     let parentElement = document.createElement('div');
     parentElement.className = 'doors';
     monsters = shuffle(monsters);
-    monsters.map(function (monster,index){
+    monsters.map(function (){
         let element = document.createElement('div');
         let img = document.createElement('img');
         img.className = 'door-img';
@@ -50,13 +50,11 @@ function renderGame(newGame = false){
         parentElement.appendChild(element);
     });
     app.appendChild( parentElement );
-
     document.querySelectorAll('.door').forEach(function (item,index){
         item.addEventListener('click', function () {
             openDoor(item,index);
         });
     });
-    console.log(monsters);
     fadePreloader();
 }
 
@@ -78,6 +76,7 @@ function openDoor(el,index){
     }else if(counter === 11){
         winwin();
     }
+    el.style.pointerEvents  = 'none';
 }
 
 function winwin(){
@@ -98,10 +97,8 @@ function loser(){
 }
 
 function removeClickeableObjects(){
-
     document.querySelectorAll('.door').forEach(function (item,index){
         item.style.pointerEvents = 'none';
-        console.log("remover event")
     });
 }
 
