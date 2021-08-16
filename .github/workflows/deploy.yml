@@ -1,0 +1,31 @@
+name: DO Deploy
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Copy files
+        uses: appleboy/ssh-action@master
+        env:
+          DEPLOYPATH: "/var/www/hermesgarcia.com/public_html/projects/vanillajs"
+        with:
+          host: ${{secrets.SSH_HOST}}
+          key: ${{secrets.SSH_KEY}}
+          username: ${{secrets.SSH_USERNAME}}
+          envs: DEPLOYPATH
+          script: |
+            cd repositories/vanillaJS
+            git pull origin
+            echo "Update repo"
+            echo "$DEPLOYPATH"
+            cp *.html $DEPLOYPATH
+            cp -R accordion/ $DEPLOYPATH
+            cp -R checkboxfilters/ $DEPLOYPATH
+            cp -R countdown/ $DEPLOYPATH
+            cp -R lib/ $DEPLOYPATH
+            cp -R monsters/ $DEPLOYPATH
+            cp -R petfinder/ $DEPLOYPATH
